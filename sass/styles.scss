@@ -193,7 +193,14 @@ ul {
 		text-align: center;
 	}
 	#arrow {
-		display: none;
+		display: block;
+		fill: $green;
+		fill-opacity: 0;
+		width: 60%;
+		transform: rotate(-65deg);
+		float: right;
+		margin-top: 3rem;
+		margin-right: -70px;
 	}
 }
 
@@ -378,6 +385,24 @@ footer {
 				transform: rotate(-45deg);
 				float: right;
 				margin-top: 4rem;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-height: 450px) {
+	.homepage-slide {
+		background: url('../images/tesla.jpg') no-repeat 20% bottom;
+		-webkit-background-size: 75%;
+		-moz-background-size: 75%;
+		-o-background-size: 75%;
+		background-size: 75%;
+		.homepage-content {
+			#arrow {
+				transform: rotate(-5deg);
+				margin-top: 0;
+				margin-right: 80px;
 			}
 		}
 	}
@@ -414,10 +439,11 @@ footer {
 				display: block;
 				fill: $green;
 				fill-opacity: 0;
-				width: 70%;
+				width: 60%;
 				float: none;
 				margin-top: 0;
 				transform: rotate(0deg);
+				margin-left: 40px;
 			}
 		}
 	}
