@@ -384,45 +384,53 @@ footer .social-icons li.github a:hover {
   background: #e3ddcc;
   color: #819ca0;
 }
+/* line 337, ../sass/styles.scss */
+.modal .modal-content .project-image img {
+  width: 100%;
+}
+/* line 340, ../sass/styles.scss */
+.modal .modal-content .project-description {
+  margin-bottom: 1rem;
+}
 
 /**
  * Responsive Breakpoints
  */
 @media (min-width: 768px) {
-  /* line 353, ../sass/styles.scss */
+  /* line 359, ../sass/styles.scss */
   .navbar #mainNav {
     margin-top: 5px;
     text-align: left;
   }
-  /* line 356, ../sass/styles.scss */
+  /* line 362, ../sass/styles.scss */
   .navbar #mainNav li {
     padding: 0 15px;
   }
 
-  /* line 362, ../sass/styles.scss */
+  /* line 368, ../sass/styles.scss */
   .homepage-slide .homepage-content {
     padding-top: 15vh;
   }
-  /* line 364, ../sass/styles.scss */
+  /* line 370, ../sass/styles.scss */
   .homepage-slide .homepage-content h1.intro {
     font-size: 2rem;
   }
 
-  /* line 369, ../sass/styles.scss */
+  /* line 375, ../sass/styles.scss */
   .services-background {
     height: 50px;
   }
 
-  /* line 374, ../sass/styles.scss */
+  /* line 380, ../sass/styles.scss */
   .services-slide .service .service-icon {
     display: block;
     margin-top: -56px;
   }
-  /* line 377, ../sass/styles.scss */
+  /* line 383, ../sass/styles.scss */
   .services-slide .service .service-icon img {
     display: inline-block;
   }
-  /* line 381, ../sass/styles.scss */
+  /* line 387, ../sass/styles.scss */
   .services-slide .service .service-body {
     width: 100%;
     display: block;
@@ -431,23 +439,23 @@ footer .social-icons li.github a:hover {
     margin: 0;
   }
 
-  /* line 392, ../sass/styles.scss */
+  /* line 398, ../sass/styles.scss */
   .projects-slide .project .project-icon {
     height: auto;
   }
-  /* line 394, ../sass/styles.scss */
+  /* line 400, ../sass/styles.scss */
   .projects-slide .project .project-icon img {
     height: auto;
     width: 60%;
     margin: 0 auto;
   }
 
-  /* line 403, ../sass/styles.scss */
+  /* line 409, ../sass/styles.scss */
   .about-slide .profile-image-wrapper {
     padding-top: 35px;
     padding-bottom: 35px;
   }
-  /* line 406, ../sass/styles.scss */
+  /* line 412, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image {
     width: 250px;
     height: 250px;
@@ -455,17 +463,17 @@ footer .social-icons li.github a:hover {
     -webkit-border-radius: 125px;
     border-radius: 125px;
   }
-  /* line 412, ../sass/styles.scss */
+  /* line 418, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image img {
     width: 250px;
     height: 250px;
   }
-  /* line 418, ../sass/styles.scss */
+  /* line 424, ../sass/styles.scss */
   .about-slide .profile {
     padding: 25px 15px;
   }
 
-  /* line 422, ../sass/styles.scss */
+  /* line 428, ../sass/styles.scss */
   .modal-dialog {
     max-width: 700px;
   }

@@ -334,6 +334,12 @@ footer {
 		background: lighten($medium-brown, 5%);
 		color: $green;
 	}
+	.project-image img {
+		width: 100%;
+	}
+	.project-description {
+		margin-bottom: 1rem;
+	}
 }
 
 /**
