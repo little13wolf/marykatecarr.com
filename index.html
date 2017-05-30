@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:bold, black, light, italic" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
   </head>
 
   <body>
@@ -84,8 +91,8 @@
 
       <div class="row projects-slide">
         <div class="col-12 col-md-4 col-xl-3 project medium-brown">
-          <a href="#">
-            <div class="project-icon"><img src="images/code.png" alt="Service: Web Design"></div>
+          <a data-toggle="modal" href="#ncmModal">
+            <div class="project-icon"><img src="images/ncm.png" alt="Service: Web Design"></div>
             <div class="project-body">
               <h4 class="text-grey">North Country Ministry</h4>
               <p class="tag text-green">Web Development</p>
@@ -94,8 +101,8 @@
         </div>
 
         <div class="col-12 col-md-4 col-xl-3 project dark-brown">
-          <a href="#">
-            <div class="project-icon"><img src="images/code.png" alt="Service: Web Design"></div>
+          <a data-toggle="modal" href="#sluModal">
+            <div class="project-icon"><img src="images/slu.png" alt="Service: Web Design"></div>
             <div class="project-body">
               <h4 class="text-light-brown">St. Lawrence University</h4>
               <p class="tag text-grey">Web Design / Responsive Development</p>
@@ -104,8 +111,8 @@
         </div>
 
         <div class="col-12 col-md-4 col-xl-3 project">
-          <a href="#">
-            <div class="project-icon"><img src="images/code.png" alt="Service: Web Design"></div>
+          <a data-toggle="modal" href="#fmpModal">
+            <div class="project-icon"><img src="images/fmp.png" alt="Service: Web Design"></div>
             <div class="project-body">
               <h4 class="text-green">Frank Murken Products</h4>
               <p class="tag text-dark-brown">Web Development</p>
@@ -114,11 +121,11 @@
         </div>
 
         <div class="hidden-lg-down col-xl-3 project medium-brown">
-          <a href="#">
-            <div class="project-icon"><img src="images/code.png" alt="Service: Web Design"></div>
+          <a data-toggle="modal" href="#sepModal">
+            <div class="project-icon"><img src="images/sep.png" alt="Service: Web Design"></div>
             <div class="project-body">
-              <h4 class="text-grey">Saratoga Emergency Physicians</h4>
-              <p class="tag text-green">Application Development</p>
+              <h4 class="text-grey">Saratoga Physician Services</h4>
+              <p class="tag text-green">MS Access Application</p>
             </div>
           </a>
         </div>
@@ -133,7 +140,7 @@
 
         <div class="col-12 col-md-5 pull-md-5 profile">
           <p>I learned HTML when I was ten years old. I recieved a degree in the design and development of web applications when I was twenty-two. Now, I am the web developer for St. Lawrence University by day and a freelancer at night.</p>
-          <p>I believe the web should be beautiful, intuitive and fucntional, and that the project should dictate the technology, not the other way around.</p>
+          <p>I believe the web should be beautiful, intuitive and functional, and that the project should dictate the technology, not the other way around.</p>
         </div>
       </div><!-- ./about slide -->
 
@@ -141,6 +148,9 @@
         <div class="col-12 col-md-8 offset-md-2">
           <h2 class="text-dark-brown">Have a project in mind? Get in touch.</h2>
           <p>Fill out the Project Form below with some details.<br>Please allow me a couple of business days to respond.</p>
+        </div>
+        <div class="col-12">
+          Wufoo Contact Form
         </div>
       </div><!-- ./contact slide -->
 
@@ -163,6 +173,125 @@
 
 
     </div> <!-- ./container-fluid -->
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="ncmModal" tabindex="-1" role="dialog" aria-labelledby="ncmModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-md-5 push-md-7 col-lg-6 push-lg-6 project-description">
+                  <h5 class="modal-title" id="ncmModalLabel">North Country Ministry Donation Database</h5>
+                  <div class="row">
+                    <div class="col-12 tag">Web Development</div>
+                    <div class="col-12 tag">Drupal</div>
+                  </div>
+                  <p>This is a simple Client Managment System designed and implemented in Drupal. Initially, this was designed to only track donors and their donations but was extended through multiple iterations. The system now can track donor and volunteer information, export CSVs to be used in mail-merge mailing lists and generate a variety of reports based on different criteria, including a year-end cumulative donation report.</p>
+                  <a href="#" role="button" class="btn btn-green disabled">Demo Coming Soon</a>
+                </div>
+                <div class="col-12 col-md-7 pull-md-5 col-lg-6 pull-lg-6 project-image">
+                  Some Image
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sluModal" tabindex="-1" role="dialog" aria-labelledby="sluModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-md-5 push-md-7 col-lg-6 push-lg-6 project-description">
+                  <h5 class="modal-title" id="sluModalLabel">St. Lawrence University</h5>
+                  <div class="row">
+                    <div class="col-12 tag">Web Development</div>
+                    <div class="col-12 tag">Drupal</div>
+                  </div>
+                  <p>I work with a small development team to update and maintain the various Drupal installations that make up the University's web presence. I build and maintain the main University website as well as the new Online Magazine web app that was launched in Spring 2016.</p>
+                  <a href="https://www.stlawu.edu/magazine/" role="button" class="btn btn-green">Launch Magazine Website</a>
+                  <a href="http://www.stlawu.edu/" role="button" class="btn btn-green">Launch University Website</a>
+                </div>
+                <div class="col-12 col-md-7 pull-md-5 col-lg-6 pull-lg-6 project-image">
+                  Some Image
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="fmpModal" tabindex="-1" role="dialog" aria-labelledby="fmpModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-md-5 push-md-7 col-lg-6 push-lg-6 project-description">
+                  <h5 class="modal-title" id="fmpModalLabel">Frank Murken Products</h5>
+                  <div class="row">
+                    <div class="col-12 tag">Web Development</div>
+                    <div class="col-12 tag">Wordpress</div>
+                  </div>
+                  <p>An ongoing position as a web consultant for FMP which includes making updates to content as needed and working closely with their representative to solve any issues or concerns that come up in regards to how the website operates.</p>
+                  <a href="http://fmproducts.com/" role="button" class="btn btn-green">Launch Website</a>
+                </div>
+                <div class="col-12 col-md-7 pull-md-5 col-lg-6 pull-lg-6 project-image">
+                  Some Image
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sepModal" tabindex="-1" role="dialog" aria-labelledby="sepModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 project-description">
+                  <h5 class="modal-title" id="sepModalLabel">Saratoga Emergency Physicians: Medical Claims Processing Database</h5>
+                  <div class="row">
+                    <div class="col-12 tag">MS Access Development</div>
+                  </div>
+                  <p>Working closely with OPSC and their client, Saratoga Emergency Physicians P.C., this project was born out of the need for a user-friendly solution to expedite the review of electronic medical records and processing of insurance claims information. Developed in Microsoft Access, this project utilizes user-friendly forms and SQL queries to interact with multiple databases containing protected health information</p>
+                  <p><em>Due to the sensitive nature of electronic medical records I cannot post an image or a link for this project.</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modals -->
 
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

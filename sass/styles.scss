@@ -55,6 +55,9 @@ ul {
 	display: inline-block;
 }
 
+.light-brown {
+	background: $light-brown;
+}
 .medium-brown {
 	background: $medium-brown;
 }
@@ -98,6 +101,26 @@ ul {
 			background-size: 25px 25px;
 		}
 	}
+}
+
+.btn-green {
+	color: $light-brown;
+	background: $green;
+	border: $dark-brown;
+	margin: .25rem 0;
+	&.disabled {
+		color: $medium-brown;
+		background: darken($green, 50%);
+		border: $dark-brown;
+	}
+	&:hover, &:focus {
+		background: darken($green, 20%);
+		color: $medium-brown;
+	}
+}
+
+.hidden {
+	display: none;
 }
 
 /**
@@ -209,11 +232,15 @@ ul {
 		padding-top: 10px;
 		padding-bottom: 10px;
 		text-align: center;
+		a:focus {
+			outline: none;
+		}
 		.project-icon {
 			text-align: center;
 			padding-top: 8px;
+			height: 70%;
 			img {
-				width: 80px;
+				height: 100%;
 				margin: 0 auto;
 			}
 		}
@@ -294,6 +321,22 @@ footer {
 }
 
 /**
+ * Modal Windows
+ */
+.modal .modal-content {
+	background: $light-brown;
+	.tag {
+		text-align: center;
+		font-style: italic;
+		font-size: .75rem;
+		padding: 3px;
+		margin: .25rem .5rem;
+		background: lighten($medium-brown, 5%);
+		color: $green;
+	}
+}
+
+/**
  * Responsive Breakpoints
  */
 // Extra small devices (portrait phones, less than 576px)
@@ -344,9 +387,22 @@ footer {
 			}
 		}
 	}
+	.projects-slide {
+		.project {
+			.project-icon {
+				height: auto;
+				img {
+					height: auto;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
 	.about-slide {
 		.profile-image-wrapper {
 			padding-top: 35px;
+			padding-bottom: 35px;
 			.profile-image {
 				width: 250px;
 				height: 250px;
@@ -362,6 +418,9 @@ footer {
 		.profile {
 			padding: 25px 15px;
 		}
+	}
+	.modal-dialog {
+		max-width:700px;
 	}
 
 }
