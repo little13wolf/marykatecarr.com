@@ -185,9 +185,14 @@ ul {
 			font-weight: 700;
 		}
 	}
-	h2 {
+	h2.tesla {
 		font-weight: 300;
 		margin-top: 2rem;
+		font-size: 1.5rem;
+	}
+
+	#arrow {
+		display: none;
 	}
 }
 
@@ -369,6 +374,17 @@ footer {
 			h1.intro {
 				font-size: 2rem;
 			}
+			h2.tesla {
+				text-align: right;
+				margin-top: 4rem;
+				font-size: 2rem;
+			}
+			#arrow {
+				display: block;
+				fill: $green;
+				fill-opacity: 0;
+				width: 70%;
+			}
 		}
 	}
 	.services-background {
@@ -438,3 +454,5 @@ footer {
 @media (min-width: 1200px) {
 
 }
+
+@import 'animations';

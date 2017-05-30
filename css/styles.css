@@ -214,22 +214,27 @@ ul li a {
   font-weight: 700;
 }
 /* line 188, ../sass/styles.scss */
-.homepage-slide h2 {
+.homepage-slide h2.tesla {
   font-weight: 300;
   margin-top: 2rem;
+  font-size: 1.5rem;
+}
+/* line 194, ../sass/styles.scss */
+.homepage-slide #arrow {
+  display: none;
 }
 
-/* line 194, ../sass/styles.scss */
+/* line 199, ../sass/styles.scss */
 .services-background {
   min-height: 3px;
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .services-slide .service {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 202, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 .services-slide .service .service-icon {
   display: inline-block;
   width: 95px;
@@ -242,68 +247,68 @@ ul li a {
   border-radius: 56px;
   background: #f5f1ed;
 }
-/* line 213, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .services-slide .service .service-icon img {
   width: 80px;
   height: 80px;
   display: block;
 }
-/* line 219, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .services-slide .service .service-body {
   display: inline-block;
   width: 70%;
   padding-left: 15px;
 }
 
-/* line 227, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .projects-slide {
   border-top: 3px solid #819ca0;
   border-bottom: 3px solid #333333;
 }
-/* line 230, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .projects-slide .project {
   height: 220px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 235, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .projects-slide .project a:focus {
   outline: none;
 }
-/* line 238, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 .projects-slide .project .project-icon {
   text-align: center;
   padding-top: 8px;
   height: 70%;
 }
-/* line 242, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .projects-slide .project .project-icon img {
   height: 100%;
   margin: 0 auto;
 }
-/* line 247, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .projects-slide .project .project-body {
   padding-top: 10px;
 }
-/* line 249, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .projects-slide .project .project-body h4 {
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 0;
 }
-/* line 255, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .projects-slide .project .project-body .tag {
   font-size: 13px;
   font-style: italic;
 }
 
-/* line 265, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .about-slide .profile-image-wrapper {
   padding-top: 20px;
 }
-/* line 267, ../sass/styles.scss */
+/* line 272, ../sass/styles.scss */
 .about-slide .profile-image-wrapper .profile-image {
   width: 112px;
   height: 112px;
@@ -315,53 +320,53 @@ ul li a {
   background: #f5f1ed;
   overflow: hidden;
 }
-/* line 277, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 .about-slide .profile-image-wrapper .profile-image img {
   width: 112px;
 }
-/* line 282, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 .about-slide .profile {
   padding: 25px 15px;
 }
 
-/* line 287, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 .contact-slide {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-/* line 291, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .contact-slide h2 {
   font-size: 1.5rem;
 }
 
-/* line 296, ../sass/styles.scss */
+/* line 301, ../sass/styles.scss */
 footer {
   padding: 10px 0;
   height: 50px;
 }
-/* line 299, ../sass/styles.scss */
+/* line 304, ../sass/styles.scss */
 footer .copyright {
   padding-top: 5px;
   font-size: 13px;
 }
-/* line 303, ../sass/styles.scss */
+/* line 308, ../sass/styles.scss */
 footer .social-icons {
   float: right;
 }
-/* line 306, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 footer .social-icons li.linkedin a {
   background-image: url("../images/linkedin-light.png");
 }
-/* line 308, ../sass/styles.scss */
+/* line 313, ../sass/styles.scss */
 footer .social-icons li.linkedin a:hover {
   background-image: url("../images/linkedin.png");
 }
-/* line 312, ../sass/styles.scss */
+/* line 317, ../sass/styles.scss */
 footer .social-icons li.github a {
   background-image: url("../images/github-light.png");
 }
-/* line 314, ../sass/styles.scss */
+/* line 319, ../sass/styles.scss */
 footer .social-icons li.github a:hover {
   background-image: url("../images/github.png");
 }
@@ -369,11 +374,11 @@ footer .social-icons li.github a:hover {
 /**
  * Modal Windows
  */
-/* line 325, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 .modal .modal-content {
   background: #f5f1ed;
 }
-/* line 327, ../sass/styles.scss */
+/* line 332, ../sass/styles.scss */
 .modal .modal-content .tag {
   text-align: center;
   font-style: italic;
@@ -383,11 +388,11 @@ footer .social-icons li.github a:hover {
   background: #e3ddcc;
   color: #819ca0;
 }
-/* line 336, ../sass/styles.scss */
+/* line 341, ../sass/styles.scss */
 .modal .modal-content .project-image img {
   width: 100%;
 }
-/* line 339, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 .modal .modal-content .project-description {
   margin-bottom: 1rem;
 }
@@ -396,40 +401,53 @@ footer .social-icons li.github a:hover {
  * Responsive Breakpoints
  */
 @media (min-width: 768px) {
-  /* line 358, ../sass/styles.scss */
+  /* line 363, ../sass/styles.scss */
   .navbar #mainNav {
     margin-top: 5px;
     text-align: left;
   }
-  /* line 361, ../sass/styles.scss */
+  /* line 366, ../sass/styles.scss */
   .navbar #mainNav li {
     padding: 0 15px;
   }
 
-  /* line 367, ../sass/styles.scss */
+  /* line 372, ../sass/styles.scss */
   .homepage-slide .homepage-content {
     padding-top: 15vh;
   }
-  /* line 369, ../sass/styles.scss */
+  /* line 374, ../sass/styles.scss */
   .homepage-slide .homepage-content h1.intro {
     font-size: 2rem;
   }
+  /* line 377, ../sass/styles.scss */
+  .homepage-slide .homepage-content h2.tesla {
+    text-align: right;
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  /* line 382, ../sass/styles.scss */
+  .homepage-slide .homepage-content #arrow {
+    display: block;
+    fill: #819ca0;
+    fill-opacity: 0;
+    width: 70%;
+  }
 
-  /* line 374, ../sass/styles.scss */
+  /* line 390, ../sass/styles.scss */
   .services-background {
     height: 50px;
   }
 
-  /* line 379, ../sass/styles.scss */
+  /* line 395, ../sass/styles.scss */
   .services-slide .service .service-icon {
     display: block;
     margin-top: -56px;
   }
-  /* line 382, ../sass/styles.scss */
+  /* line 398, ../sass/styles.scss */
   .services-slide .service .service-icon img {
     display: inline-block;
   }
-  /* line 386, ../sass/styles.scss */
+  /* line 402, ../sass/styles.scss */
   .services-slide .service .service-body {
     width: 100%;
     display: block;
@@ -438,23 +456,23 @@ footer .social-icons li.github a:hover {
     margin: 0;
   }
 
-  /* line 397, ../sass/styles.scss */
+  /* line 413, ../sass/styles.scss */
   .projects-slide .project .project-icon {
     height: auto;
   }
-  /* line 399, ../sass/styles.scss */
+  /* line 415, ../sass/styles.scss */
   .projects-slide .project .project-icon img {
     height: auto;
     width: 60%;
     margin: 0 auto;
   }
 
-  /* line 408, ../sass/styles.scss */
+  /* line 424, ../sass/styles.scss */
   .about-slide .profile-image-wrapper {
     padding-top: 35px;
     padding-bottom: 35px;
   }
-  /* line 411, ../sass/styles.scss */
+  /* line 427, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image {
     width: 250px;
     height: 250px;
@@ -462,17 +480,36 @@ footer .social-icons li.github a:hover {
     -webkit-border-radius: 125px;
     border-radius: 125px;
   }
-  /* line 417, ../sass/styles.scss */
+  /* line 433, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image img {
     width: 250px;
   }
-  /* line 422, ../sass/styles.scss */
+  /* line 438, ../sass/styles.scss */
   .about-slide .profile {
     padding: 45px 15px;
   }
 
-  /* line 426, ../sass/styles.scss */
+  /* line 442, ../sass/styles.scss */
   .modal-dialog {
     max-width: 700px;
   }
+}
+@keyframes animate-path {
+  89% {
+    fill-opacity: 0;
+  }
+  90% {
+    fill-opacity: .25;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+/* line 15, ../sass/_animations.scss */
+#arrow #arrow-path {
+  stroke: #819ca0;
+  stroke-dasharray: 2000px;
+  stroke-dashoffset: 2000px;
+  animation: animate-path 3s linear forwards;
 }

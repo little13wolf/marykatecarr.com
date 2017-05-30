@@ -1,0 +1,22 @@
+@keyframes animate-path {
+	89% {
+		fill-opacity: 0;
+	}
+	90% {
+		fill-opacity: .25;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		fill-opacity: 1;
+	}
+}
+
+#arrow {
+	#arrow-path {
+		stroke: $green;
+	    stroke-dasharray: 2000px;
+	    stroke-dashoffset: 2000px;
+  
+  		animation: animate-path 3s linear forwards;
+	}
+}
