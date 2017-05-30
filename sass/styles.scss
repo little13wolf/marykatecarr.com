@@ -3,6 +3,7 @@
  */
 $grey: #333333;
 $green: #819ca0;
+$tesla-brown: #fcf8f5;
 $light-brown: #f5f1ed;
 $medium-brown: #dad2bc;
 $dark-brown: #a99985;
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-	background: $light-brown;
+	background: $tesla-brown;
 	color: $grey;
 }
 
@@ -133,7 +134,7 @@ ul {
 	z-index: 100;
 	width: 100%;
 	min-height: 50px;
-	background:$light-brown;
+	background:$tesla-brown;
 	.navbar-toggler-icon {
 		background: url("../images/menu.png") no-repeat center center;
 		background-size: 25px 25px;
@@ -172,15 +173,15 @@ ul {
  */
 .homepage-slide {
 	height: 100vh;
-	background: url('../images/tesla.jpg') no-repeat center center; 
-	-webkit-background-size: fill;
-	-moz-background-size: fill;
-	-o-background-size: fill;
-	background-size: fill;
+	background: url('../images/tesla.jpg') no-repeat 20% bottom; 
+	-webkit-background-size: 50%;
+	-moz-background-size: 50%;
+	-o-background-size: 50%;
+	background-size: 200%;
 	padding-top: 55px;
 	h1.intro {
 		font-weight: 300;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		span {
 			font-weight: 700;
 		}
@@ -188,9 +189,9 @@ ul {
 	h2.tesla {
 		font-weight: 300;
 		margin-top: 2rem;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
+		text-align: center;
 	}
-
 	#arrow {
 		display: none;
 	}
@@ -354,7 +355,32 @@ footer {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
+	.homepage-slide {
+		background: url('../images/tesla.jpg') no-repeat 20% center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		.homepage-content {
+			h1.intro {
+				font-size: 1.5rem;
+			}
+			h2.tesla {
+				text-align: right;
+				margin-top: 2rem;
+				font-size: 1.5rem;
+			}
+			#arrow {
+				display: block;
+				fill: $green;
+				fill-opacity: 0;
+				width: 40%;
+				transform: rotate(-45deg);
+				float: right;
+				margin-top: 4rem;
+			}
+		}
+	}
 }
 
 // Medium devices (tablets, 768px and up)
@@ -369,6 +395,11 @@ footer {
 		}
 	}
 	.homepage-slide {
+		background: url('../images/tesla.jpg') no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		.homepage-content {
 			padding-top: 15vh;
 			h1.intro {
@@ -384,6 +415,9 @@ footer {
 				fill: $green;
 				fill-opacity: 0;
 				width: 70%;
+				float: none;
+				margin-top: 0;
+				transform: rotate(0deg);
 			}
 		}
 	}

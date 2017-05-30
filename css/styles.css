@@ -4,110 +4,110 @@
 /**
  * Base Styles
  */
-/* line 13, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 html {
   font-family: 'Lato', sans-serif;
   position: relative;
 }
 
-/* line 18, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 body {
-  background: #f5f1ed;
+  background: #fcf8f5;
   color: #333333;
 }
 
-/* line 23, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 h3 {
   font-size: 1.5rem;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 h3, h4 {
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 32, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 a {
   color: #333333;
 }
-/* line 34, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 a:hover, a:focus {
   color: #819ca0;
   text-decoration: none;
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 ul {
   list-style-type: none;
   margin-bottom: 0;
 }
-/* line 44, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 ul li {
   height: 100%;
 }
-/* line 46, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 ul li a {
   height: 100%;
   vertical-align: middle;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .inline-list li,
 .inline-item {
   display: inline-block;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .light-brown {
   background: #f5f1ed;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .medium-brown {
   background: #dad2bc;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .dark-brown {
   background: #a99985;
 }
 
-/* line 69, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .green {
   background: #819ca0;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .text-light-brown {
   color: #f5f1ed;
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .text-medium-brown {
   color: #dad2bc;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 .text-dark-brown {
   color: #a99985;
 }
 
-/* line 85, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 .text-green {
   color: #819ca0;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 .text-grey {
   color: #333333;
 }
 
-/* line 94, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .social-icons li {
   margin-right: 5px;
 }
-/* line 96, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .social-icons li a {
   display: block;
   width: 25px;
@@ -116,26 +116,26 @@ ul li a {
   background-size: 25px 25px;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 .btn-green {
   color: #f5f1ed;
   background: #819ca0;
   border: #a99985;
   margin: .25rem 0;
 }
-/* line 111, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .btn-green.disabled {
   color: #dad2bc;
   background: #0f1313;
   border: #a99985;
 }
-/* line 116, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .btn-green:hover, .btn-green:focus {
   background: #50676b;
   color: #dad2bc;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .hidden {
   display: none;
 }
@@ -143,7 +143,7 @@ ul li a {
 /**
  * Navbar
  */
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .navbar {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -151,42 +151,42 @@ ul li a {
   z-index: 100;
   width: 100%;
   min-height: 50px;
-  background: #f5f1ed;
+  background: #fcf8f5;
 }
-/* line 137, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .navbar .navbar-toggler-icon {
   background: url("../images/menu.png") no-repeat center center;
   background-size: 25px 25px;
 }
-/* line 140, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .navbar .navbar-toggler-icon:hover {
   background-image: url("../images/menu-green.png");
 }
-/* line 144, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .navbar #mainNav {
   margin-top: 45px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .navbar .social-icons {
   position: absolute;
   right: 0;
   margin-top: 7px;
 }
-/* line 154, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .navbar .social-icons li.linkedin a {
   background-image: url("../images/linkedin.png");
 }
-/* line 156, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .navbar .social-icons li.linkedin a:hover {
   background-image: url("../images/linkedin-green.png");
 }
-/* line 160, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .navbar .social-icons li.github a {
   background-image: url("../images/github.png");
 }
-/* line 162, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .navbar .social-icons li.github a:hover {
   background-image: url("../images/github-green.png");
 }
@@ -194,47 +194,48 @@ ul li a {
 /**
  * Slides
  */
-/* line 173, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .homepage-slide {
   height: 100vh;
-  background: url("../images/tesla.jpg") no-repeat center center;
-  -webkit-background-size: fill;
-  -moz-background-size: fill;
-  -o-background-size: fill;
-  background-size: fill;
+  background: url("../images/tesla.jpg") no-repeat 20% bottom;
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
+  background-size: 200%;
   padding-top: 55px;
 }
-/* line 181, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .homepage-slide h1.intro {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
-/* line 184, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .homepage-slide h1.intro span {
   font-weight: 700;
 }
-/* line 188, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .homepage-slide h2.tesla {
   font-weight: 300;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
 }
-/* line 194, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .homepage-slide #arrow {
   display: none;
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .services-background {
   min-height: 3px;
 }
 
-/* line 204, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .services-slide .service {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 207, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .services-slide .service .service-icon {
   display: inline-block;
   width: 95px;
@@ -247,68 +248,68 @@ ul li a {
   border-radius: 56px;
   background: #f5f1ed;
 }
-/* line 218, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .services-slide .service .service-icon img {
   width: 80px;
   height: 80px;
   display: block;
 }
-/* line 224, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .services-slide .service .service-body {
   display: inline-block;
   width: 70%;
   padding-left: 15px;
 }
 
-/* line 232, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 .projects-slide {
   border-top: 3px solid #819ca0;
   border-bottom: 3px solid #333333;
 }
-/* line 235, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .projects-slide .project {
   height: 220px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 240, ../sass/styles.scss */
+/* line 241, ../sass/styles.scss */
 .projects-slide .project a:focus {
   outline: none;
 }
-/* line 243, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
 .projects-slide .project .project-icon {
   text-align: center;
   padding-top: 8px;
   height: 70%;
 }
-/* line 247, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .projects-slide .project .project-icon img {
   height: 100%;
   margin: 0 auto;
 }
-/* line 252, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 .projects-slide .project .project-body {
   padding-top: 10px;
 }
-/* line 254, ../sass/styles.scss */
+/* line 255, ../sass/styles.scss */
 .projects-slide .project .project-body h4 {
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 0;
 }
-/* line 260, ../sass/styles.scss */
+/* line 261, ../sass/styles.scss */
 .projects-slide .project .project-body .tag {
   font-size: 13px;
   font-style: italic;
 }
 
-/* line 270, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .about-slide .profile-image-wrapper {
   padding-top: 20px;
 }
-/* line 272, ../sass/styles.scss */
+/* line 273, ../sass/styles.scss */
 .about-slide .profile-image-wrapper .profile-image {
   width: 112px;
   height: 112px;
@@ -320,53 +321,53 @@ ul li a {
   background: #f5f1ed;
   overflow: hidden;
 }
-/* line 282, ../sass/styles.scss */
+/* line 283, ../sass/styles.scss */
 .about-slide .profile-image-wrapper .profile-image img {
   width: 112px;
 }
-/* line 287, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .about-slide .profile {
   padding: 25px 15px;
 }
 
-/* line 292, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .contact-slide {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-/* line 296, ../sass/styles.scss */
+/* line 297, ../sass/styles.scss */
 .contact-slide h2 {
   font-size: 1.5rem;
 }
 
-/* line 301, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 footer {
   padding: 10px 0;
   height: 50px;
 }
-/* line 304, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 footer .copyright {
   padding-top: 5px;
   font-size: 13px;
 }
-/* line 308, ../sass/styles.scss */
+/* line 309, ../sass/styles.scss */
 footer .social-icons {
   float: right;
 }
-/* line 311, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 footer .social-icons li.linkedin a {
   background-image: url("../images/linkedin-light.png");
 }
-/* line 313, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 footer .social-icons li.linkedin a:hover {
   background-image: url("../images/linkedin.png");
 }
-/* line 317, ../sass/styles.scss */
+/* line 318, ../sass/styles.scss */
 footer .social-icons li.github a {
   background-image: url("../images/github-light.png");
 }
-/* line 319, ../sass/styles.scss */
+/* line 320, ../sass/styles.scss */
 footer .social-icons li.github a:hover {
   background-image: url("../images/github.png");
 }
@@ -374,11 +375,11 @@ footer .social-icons li.github a:hover {
 /**
  * Modal Windows
  */
-/* line 330, ../sass/styles.scss */
+/* line 331, ../sass/styles.scss */
 .modal .modal-content {
   background: #f5f1ed;
 }
-/* line 332, ../sass/styles.scss */
+/* line 333, ../sass/styles.scss */
 .modal .modal-content .tag {
   text-align: center;
   font-style: italic;
@@ -388,11 +389,11 @@ footer .social-icons li.github a:hover {
   background: #e3ddcc;
   color: #819ca0;
 }
-/* line 341, ../sass/styles.scss */
+/* line 342, ../sass/styles.scss */
 .modal .modal-content .project-image img {
   width: 100%;
 }
-/* line 344, ../sass/styles.scss */
+/* line 345, ../sass/styles.scss */
 .modal .modal-content .project-description {
   margin-bottom: 1rem;
 }
@@ -400,54 +401,95 @@ footer .social-icons li.github a:hover {
 /**
  * Responsive Breakpoints
  */
+@media (min-width: 576px) {
+  /* line 358, ../sass/styles.scss */
+  .homepage-slide {
+    background: url("../images/tesla.jpg") no-repeat 20% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* line 365, ../sass/styles.scss */
+  .homepage-slide .homepage-content h1.intro {
+    font-size: 1.5rem;
+  }
+  /* line 368, ../sass/styles.scss */
+  .homepage-slide .homepage-content h2.tesla {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  /* line 373, ../sass/styles.scss */
+  .homepage-slide .homepage-content #arrow {
+    display: block;
+    fill: #819ca0;
+    fill-opacity: 0;
+    width: 40%;
+    transform: rotate(-45deg);
+    float: right;
+    margin-top: 4rem;
+  }
+}
 @media (min-width: 768px) {
-  /* line 363, ../sass/styles.scss */
+  /* line 389, ../sass/styles.scss */
   .navbar #mainNav {
     margin-top: 5px;
     text-align: left;
   }
-  /* line 366, ../sass/styles.scss */
+  /* line 392, ../sass/styles.scss */
   .navbar #mainNav li {
     padding: 0 15px;
   }
 
-  /* line 372, ../sass/styles.scss */
+  /* line 397, ../sass/styles.scss */
+  .homepage-slide {
+    background: url("../images/tesla.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* line 403, ../sass/styles.scss */
   .homepage-slide .homepage-content {
     padding-top: 15vh;
   }
-  /* line 374, ../sass/styles.scss */
+  /* line 405, ../sass/styles.scss */
   .homepage-slide .homepage-content h1.intro {
     font-size: 2rem;
   }
-  /* line 377, ../sass/styles.scss */
+  /* line 408, ../sass/styles.scss */
   .homepage-slide .homepage-content h2.tesla {
     text-align: right;
     margin-top: 4rem;
     font-size: 2rem;
   }
-  /* line 382, ../sass/styles.scss */
+  /* line 413, ../sass/styles.scss */
   .homepage-slide .homepage-content #arrow {
     display: block;
     fill: #819ca0;
     fill-opacity: 0;
     width: 70%;
+    float: none;
+    margin-top: 0;
+    transform: rotate(0deg);
   }
 
-  /* line 390, ../sass/styles.scss */
+  /* line 424, ../sass/styles.scss */
   .services-background {
     height: 50px;
   }
 
-  /* line 395, ../sass/styles.scss */
+  /* line 429, ../sass/styles.scss */
   .services-slide .service .service-icon {
     display: block;
     margin-top: -56px;
   }
-  /* line 398, ../sass/styles.scss */
+  /* line 432, ../sass/styles.scss */
   .services-slide .service .service-icon img {
     display: inline-block;
   }
-  /* line 402, ../sass/styles.scss */
+  /* line 436, ../sass/styles.scss */
   .services-slide .service .service-body {
     width: 100%;
     display: block;
@@ -456,23 +498,23 @@ footer .social-icons li.github a:hover {
     margin: 0;
   }
 
-  /* line 413, ../sass/styles.scss */
+  /* line 447, ../sass/styles.scss */
   .projects-slide .project .project-icon {
     height: auto;
   }
-  /* line 415, ../sass/styles.scss */
+  /* line 449, ../sass/styles.scss */
   .projects-slide .project .project-icon img {
     height: auto;
     width: 60%;
     margin: 0 auto;
   }
 
-  /* line 424, ../sass/styles.scss */
+  /* line 458, ../sass/styles.scss */
   .about-slide .profile-image-wrapper {
     padding-top: 35px;
     padding-bottom: 35px;
   }
-  /* line 427, ../sass/styles.scss */
+  /* line 461, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image {
     width: 250px;
     height: 250px;
@@ -480,16 +522,16 @@ footer .social-icons li.github a:hover {
     -webkit-border-radius: 125px;
     border-radius: 125px;
   }
-  /* line 433, ../sass/styles.scss */
+  /* line 467, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image img {
     width: 250px;
   }
-  /* line 438, ../sass/styles.scss */
+  /* line 472, ../sass/styles.scss */
   .about-slide .profile {
     padding: 45px 15px;
   }
 
-  /* line 442, ../sass/styles.scss */
+  /* line 476, ../sass/styles.scss */
   .modal-dialog {
     max-width: 700px;
   }
