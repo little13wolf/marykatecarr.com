@@ -35,22 +35,22 @@
       <div class="collapse navbar-collapse" id="menuWrapper">
         <ul id="mainNav" class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" onclick="scrollToAnchor('home')">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" onclick="scrollToAnchor('projects')">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" onclick="scrollToAnchor('about')">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" onclick="scrollToAnchor('contact')">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div id="home" class="container-fluid">
       <div class="row homepage-slide">
         <div class="homepage-content col-12 col-md-6 offset-md-6">
           <h1 class="intro">Hi, my name is Mary-Kate. I build <span class="text-green">beautiful</span> &amp; <span class="text-green">functional</span> web solutions for small businesses and non-profits.</h1>
@@ -89,7 +89,7 @@
         </div>
       </div><!-- ./services slide -->
 
-      <div class="row projects-slide">
+      <div id="projects" class="row projects-slide">
         <div class="col-12 col-md-4 col-xl-3 project medium-brown">
           <a data-toggle="modal" href="#ncmModal">
             <div class="project-icon"><img src="images/ncm.png" alt="Service: Web Design"></div>
@@ -131,7 +131,7 @@
         </div>
       </div><!-- ./projects slide -->
 
-      <div class="row about-slide green text-light-brown">
+      <div id="about" class="row about-slide green text-light-brown">
         <div class="col-12 col-md-5 push-md-5 offset-md-1 profile-image-wrapper">
           <div class="profile-image">
             <img src="images/mk-profile.jpg" alt="Mary-Kate Carr">
@@ -144,7 +144,7 @@
         </div>
       </div><!-- ./about slide -->
 
-      <div class="row contact-slide">
+      <div id="contact" class="row contact-slide">
         <div class="col-12 col-md-8 offset-md-2">
           <h2 class="text-dark-brown">Have a project in mind? Get in touch.</h2>
           <p>Fill out the Project Form below with some details.<br>Please allow me a couple of business days to respond.</p>
@@ -223,8 +223,8 @@
                     <div class="col-12 tag">Drupal</div>
                   </div>
                   <p>I work with a small development team to update and maintain the various Drupal installations that make up the University's web presence. I build and maintain the main University website as well as the new Online Magazine web app that was launched in Spring 2016.</p>
-                  <a href="https://www.stlawu.edu/magazine/" role="button" class="btn btn-green">Launch Magazine Website</a>
-                  <a href="http://www.stlawu.edu/" role="button" class="btn btn-green">Launch University Website</a>
+                  <a href="https://www.stlawu.edu/magazine/" role="button" target="_blank" class="btn btn-green">Launch Magazine Website</a>
+                  <a href="http://www.stlawu.edu/" role="button" target="_blank" class="btn btn-green">Launch University Website</a>
                 </div>
                 <div class="col-12 col-md-7 pull-md-5 col-lg-6 pull-lg-6 project-image">
                   <img src="images/slu-screen.jpg" alt="screengrab of SLU and SLU magazine websites">
@@ -254,7 +254,7 @@
                     <div class="col-12 tag">Wordpress</div>
                   </div>
                   <p>An ongoing position as a web consultant for FMP which includes making updates to content as needed and working closely with their representative to solve any issues or concerns that come up in regards to how the website operates.</p>
-                  <a href="http://fmproducts.com/" role="button" class="btn btn-green">Launch Website</a>
+                  <a href="http://fmproducts.com/" role="button" target="_blank" class="btn btn-green">Launch Website</a>
                 </div>
                 <div class="col-12 col-md-7 pull-md-5 col-lg-6 pull-lg-6 project-image">
                   <img src="images/fmp-screen.jpg" alt="screengrab of FMP website">
@@ -294,8 +294,19 @@
     <!-- End Modals -->
 
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script>
+      function scrollToAnchor(aid){
+        var aTag = $("div[id='"+ aid +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top - 50},'slow');
+
+        if ($(window).width() < 768) {
+          $('.navbar-toggler').click();
+        }
+      }
+    </script>
   </body>
 </html>
