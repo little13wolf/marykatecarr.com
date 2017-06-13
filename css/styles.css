@@ -133,9 +133,10 @@ ul li a {
 .btn-green:hover, .btn-green:focus {
   background: #50676b;
   color: #dad2bc;
+  cursor: pointer;
 }
 
-/* line 123, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .hidden {
   display: none;
 }
@@ -143,7 +144,7 @@ ul li a {
 /**
  * Navbar
  */
-/* line 130, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .navbar {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -153,40 +154,49 @@ ul li a {
   min-height: 50px;
   background: #fcf8f5;
 }
-/* line 138, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .navbar .navbar-toggler-icon {
   background: url("../images/menu.png") no-repeat center center;
   background-size: 25px 25px;
 }
-/* line 141, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .navbar .navbar-toggler-icon:hover {
   background-image: url("../images/menu-green.png");
 }
-/* line 145, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .navbar #mainNav {
   margin-top: 45px;
   text-align: center;
   text-transform: uppercase;
 }
 /* line 150, ../sass/styles.scss */
+.navbar #mainNav .nav-link {
+  cursor: pointer;
+}
+/* line 152, ../sass/styles.scss */
+.navbar #mainNav .nav-link:hover, .navbar #mainNav .nav-link:focus {
+  color: #819ca0;
+  text-decoration: none;
+}
+/* line 159, ../sass/styles.scss */
 .navbar .social-icons {
   position: absolute;
   right: 0;
   margin-top: 7px;
 }
-/* line 155, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .navbar .social-icons li.linkedin a {
   background-image: url("../images/linkedin.png");
 }
-/* line 157, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .navbar .social-icons li.linkedin a:hover {
   background-image: url("../images/linkedin-green.png");
 }
-/* line 161, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .navbar .social-icons li.github a {
   background-image: url("../images/github.png");
 }
-/* line 163, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .navbar .social-icons li.github a:hover {
   background-image: url("../images/github-green.png");
 }
@@ -194,7 +204,7 @@ ul li a {
 /**
  * Slides
  */
-/* line 174, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .homepage-slide {
   height: 100vh;
   background: url("../images/tesla.jpg") no-repeat 20% bottom;
@@ -204,23 +214,23 @@ ul li a {
   background-size: 200%;
   padding-top: 55px;
 }
-/* line 182, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .homepage-slide h1.intro {
   font-weight: 300;
   font-size: 1.25rem;
 }
-/* line 185, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 .homepage-slide h1.intro span {
   font-weight: 700;
 }
-/* line 189, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .homepage-slide h2.tesla {
   font-weight: 300;
   margin-top: 2rem;
   font-size: 1.25rem;
   text-align: center;
 }
-/* line 195, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .homepage-slide #arrow {
   display: block;
   fill: #819ca0;
@@ -232,17 +242,17 @@ ul li a {
   margin-right: -70px;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .services-background {
   min-height: 3px;
 }
 
-/* line 212, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 .services-slide .service {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 215, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .services-slide .service .service-icon {
   display: inline-block;
   width: 95px;
@@ -255,68 +265,68 @@ ul li a {
   border-radius: 56px;
   background: #f5f1ed;
 }
-/* line 226, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .services-slide .service .service-icon img {
   width: 80px;
   height: 80px;
   display: block;
 }
-/* line 232, ../sass/styles.scss */
+/* line 241, ../sass/styles.scss */
 .services-slide .service .service-body {
   display: inline-block;
   width: 70%;
   padding-left: 15px;
 }
 
-/* line 240, ../sass/styles.scss */
+/* line 249, ../sass/styles.scss */
 .projects-slide {
   border-top: 3px solid #819ca0;
   border-bottom: 3px solid #333333;
 }
-/* line 243, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .projects-slide .project {
   height: 220px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 248, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .projects-slide .project a:focus {
   outline: none;
 }
-/* line 251, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .projects-slide .project .project-icon {
   text-align: center;
   padding-top: 8px;
   height: 70%;
 }
-/* line 255, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .projects-slide .project .project-icon img {
   height: 100%;
   margin: 0 auto;
 }
-/* line 260, ../sass/styles.scss */
+/* line 269, ../sass/styles.scss */
 .projects-slide .project .project-body {
   padding-top: 10px;
 }
-/* line 262, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .projects-slide .project .project-body h4 {
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 0;
 }
-/* line 268, ../sass/styles.scss */
+/* line 277, ../sass/styles.scss */
 .projects-slide .project .project-body .tag {
   font-size: 13px;
   font-style: italic;
 }
 
-/* line 278, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 .about-slide .profile-image-wrapper {
   padding-top: 20px;
 }
-/* line 280, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 .about-slide .profile-image-wrapper .profile-image {
   width: 112px;
   height: 112px;
@@ -328,53 +338,53 @@ ul li a {
   background: #f5f1ed;
   overflow: hidden;
 }
-/* line 290, ../sass/styles.scss */
+/* line 299, ../sass/styles.scss */
 .about-slide .profile-image-wrapper .profile-image img {
   width: 112px;
 }
-/* line 295, ../sass/styles.scss */
+/* line 304, ../sass/styles.scss */
 .about-slide .profile {
   padding: 25px 15px;
 }
 
-/* line 300, ../sass/styles.scss */
+/* line 309, ../sass/styles.scss */
 .contact-slide {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-/* line 304, ../sass/styles.scss */
+/* line 313, ../sass/styles.scss */
 .contact-slide h2 {
   font-size: 1.5rem;
 }
 
-/* line 309, ../sass/styles.scss */
+/* line 318, ../sass/styles.scss */
 footer {
   padding: 10px 0;
   height: 50px;
 }
-/* line 312, ../sass/styles.scss */
+/* line 321, ../sass/styles.scss */
 footer .copyright {
   padding-top: 5px;
   font-size: 13px;
 }
-/* line 316, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 footer .social-icons {
   float: right;
 }
-/* line 319, ../sass/styles.scss */
+/* line 328, ../sass/styles.scss */
 footer .social-icons li.linkedin a {
   background-image: url("../images/linkedin-light.png");
 }
-/* line 321, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 footer .social-icons li.linkedin a:hover {
   background-image: url("../images/linkedin.png");
 }
-/* line 325, ../sass/styles.scss */
+/* line 334, ../sass/styles.scss */
 footer .social-icons li.github a {
   background-image: url("../images/github-light.png");
 }
-/* line 327, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 footer .social-icons li.github a:hover {
   background-image: url("../images/github.png");
 }
@@ -382,11 +392,11 @@ footer .social-icons li.github a:hover {
 /**
  * Modal Windows
  */
-/* line 338, ../sass/styles.scss */
+/* line 347, ../sass/styles.scss */
 .modal .modal-content {
   background: #f5f1ed;
 }
-/* line 340, ../sass/styles.scss */
+/* line 349, ../sass/styles.scss */
 .modal .modal-content .tag {
   text-align: center;
   font-style: italic;
@@ -396,11 +406,11 @@ footer .social-icons li.github a:hover {
   background: #e3ddcc;
   color: #819ca0;
 }
-/* line 349, ../sass/styles.scss */
+/* line 358, ../sass/styles.scss */
 .modal .modal-content .project-image img {
   width: 100%;
 }
-/* line 352, ../sass/styles.scss */
+/* line 361, ../sass/styles.scss */
 .modal .modal-content .project-description {
   margin-bottom: 1rem;
 }
@@ -409,7 +419,7 @@ footer .social-icons li.github a:hover {
  * Responsive Breakpoints
  */
 @media (min-width: 576px) {
-  /* line 365, ../sass/styles.scss */
+  /* line 374, ../sass/styles.scss */
   .homepage-slide {
     background: url("../images/tesla.jpg") no-repeat 20% center;
     -webkit-background-size: cover;
@@ -417,17 +427,17 @@ footer .social-icons li.github a:hover {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 372, ../sass/styles.scss */
+  /* line 381, ../sass/styles.scss */
   .homepage-slide .homepage-content h1.intro {
     font-size: 1.5rem;
   }
-  /* line 375, ../sass/styles.scss */
+  /* line 384, ../sass/styles.scss */
   .homepage-slide .homepage-content h2.tesla {
     text-align: right;
     margin-top: 2rem;
     font-size: 1.5rem;
   }
-  /* line 380, ../sass/styles.scss */
+  /* line 389, ../sass/styles.scss */
   .homepage-slide .homepage-content #arrow {
     display: block;
     fill: #819ca0;
@@ -440,7 +450,7 @@ footer .social-icons li.github a:hover {
   }
 }
 @media (min-width: 576px) and (max-height: 450px) {
-  /* line 395, ../sass/styles.scss */
+  /* line 404, ../sass/styles.scss */
   .homepage-slide {
     background: url("../images/tesla.jpg") no-repeat 20% bottom;
     -webkit-background-size: 75%;
@@ -448,7 +458,7 @@ footer .social-icons li.github a:hover {
     -o-background-size: 75%;
     background-size: 75%;
   }
-  /* line 402, ../sass/styles.scss */
+  /* line 411, ../sass/styles.scss */
   .homepage-slide .homepage-content #arrow {
     transform: rotate(-5deg);
     margin-top: 0;
@@ -456,17 +466,17 @@ footer .social-icons li.github a:hover {
   }
 }
 @media (min-width: 768px) {
-  /* line 414, ../sass/styles.scss */
+  /* line 423, ../sass/styles.scss */
   .navbar #mainNav {
     margin-top: 5px;
     text-align: left;
   }
-  /* line 417, ../sass/styles.scss */
+  /* line 426, ../sass/styles.scss */
   .navbar #mainNav li {
     padding: 0 15px;
   }
 
-  /* line 422, ../sass/styles.scss */
+  /* line 431, ../sass/styles.scss */
   .homepage-slide {
     background: url("../images/tesla.jpg") no-repeat center center;
     -webkit-background-size: cover;
@@ -474,21 +484,21 @@ footer .social-icons li.github a:hover {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 428, ../sass/styles.scss */
+  /* line 437, ../sass/styles.scss */
   .homepage-slide .homepage-content {
     padding-top: 15vh;
   }
-  /* line 430, ../sass/styles.scss */
+  /* line 439, ../sass/styles.scss */
   .homepage-slide .homepage-content h1.intro {
     font-size: 2rem;
   }
-  /* line 433, ../sass/styles.scss */
+  /* line 442, ../sass/styles.scss */
   .homepage-slide .homepage-content h2.tesla {
     text-align: right;
     margin-top: 4rem;
     font-size: 2rem;
   }
-  /* line 438, ../sass/styles.scss */
+  /* line 447, ../sass/styles.scss */
   .homepage-slide .homepage-content #arrow {
     display: block;
     fill: #819ca0;
@@ -500,21 +510,21 @@ footer .social-icons li.github a:hover {
     margin-left: 40px;
   }
 
-  /* line 450, ../sass/styles.scss */
+  /* line 459, ../sass/styles.scss */
   .services-background {
     height: 50px;
   }
 
-  /* line 455, ../sass/styles.scss */
+  /* line 464, ../sass/styles.scss */
   .services-slide .service .service-icon {
     display: block;
     margin-top: -56px;
   }
-  /* line 458, ../sass/styles.scss */
+  /* line 467, ../sass/styles.scss */
   .services-slide .service .service-icon img {
     display: inline-block;
   }
-  /* line 462, ../sass/styles.scss */
+  /* line 471, ../sass/styles.scss */
   .services-slide .service .service-body {
     width: 100%;
     display: block;
@@ -523,23 +533,24 @@ footer .social-icons li.github a:hover {
     margin: 0;
   }
 
-  /* line 473, ../sass/styles.scss */
+  /* line 482, ../sass/styles.scss */
   .projects-slide .project .project-icon {
     height: auto;
   }
-  /* line 475, ../sass/styles.scss */
+  /* line 484, ../sass/styles.scss */
   .projects-slide .project .project-icon img {
     height: auto;
     width: 60%;
+    max-width: 250px;
     margin: 0 auto;
   }
 
-  /* line 484, ../sass/styles.scss */
+  /* line 494, ../sass/styles.scss */
   .about-slide .profile-image-wrapper {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  /* line 487, ../sass/styles.scss */
+  /* line 497, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image {
     width: 250px;
     height: 250px;
@@ -547,18 +558,24 @@ footer .social-icons li.github a:hover {
     -webkit-border-radius: 125px;
     border-radius: 125px;
   }
-  /* line 493, ../sass/styles.scss */
+  /* line 503, ../sass/styles.scss */
   .about-slide .profile-image-wrapper .profile-image img {
     width: 250px;
   }
-  /* line 498, ../sass/styles.scss */
+  /* line 508, ../sass/styles.scss */
   .about-slide .profile {
     padding: 45px 15px;
   }
 
-  /* line 502, ../sass/styles.scss */
+  /* line 512, ../sass/styles.scss */
   .modal-dialog {
     max-width: 700px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 526, ../sass/styles.scss */
+  .projects-slide .project {
+    height: 240px;
   }
 }
 @keyframes animate-path {
