@@ -1,41 +1,61 @@
 /**
  * Colors
  */
-$grey: #333333;
-$green: #819ca0;
-$tesla-brown: #fcf8f5;
-$light-brown: #f5f1ed;
-$medium-brown: #dad2bc;
-$dark-brown: #a99985;
+$grey-light: #ddd;
+
+$peach-dark: #a77d6f;
+$peach: #e3ad96;
+$peach-light: #e3c6b9;
+$green-dark: #17343e;
+$green: #244855;
+$green-light: #68757e;
+
+/**
+ * Colors: General
+ */
+$background: $grey-light;
+$text: $green-dark;
+$text-secondary: $green-light;
+$landing-text: $peach;
+$nav-background: $green-dark;
+$nav-text: $peach;
+$nav-text-hover: $peach-dark;
+
+/**
+ * Colors: Project Tiles
+ */
+$tile-bg: $peach-light;
+$tile-border: $green-dark;
+$tile-hover: $peach-dark;
+$tile-hover-text: $grey-light;
+$tile-hover-secondary: $peach-light;
+
+/**
+ * Colors: Social Slide
+ */
+$background-social: $green;
+$social-text: $peach;
+$social-p: $peach-light;
+
 
 /**
  * Base Styles
  */
 html {
-	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
 	position: relative;
 }
 
 body {
-	background: $tesla-brown;
-	color: $grey;
-}
-
-h3 {
-	font-size: 1.5rem;
-}
-
-h3, h4 {
-	text-transform: uppercase;
-	font-weight: 700;
+	background: $background;
+	color: $text;
 }
 
 a {
-	color: $grey;
+	color: $nav-text;
 	&:hover,
 	&:focus {
-		color: $green;
-		text-decoration: none;
+		color: $nav-text-hover;
 	}
 }
 
@@ -56,234 +76,116 @@ ul {
 	display: inline-block;
 }
 
-.light-brown {
-	background: $light-brown;
-}
-.medium-brown {
-	background: $medium-brown;
-}
-
-.dark-brown {
-	background: $dark-brown;
-}
-
-.green {
-	background: $green;
-}
-
-.text-light-brown {
-	color: $light-brown;
-}
-
-.text-medium-brown {
-	color: $medium-brown;
-}
-
-.text-dark-brown {
-	color: $dark-brown;
-}
-
-.text-green {
-	color: $green;
-}
-
-.text-grey {
-	color: $grey;
-}
-
-.social-icons {
-	li {
-		margin-right: 5px;
-		a {
-			display: block;
-			width: 25px;
-			height: 25px;
-			background: no-repeat center center;
-			background-size: 25px 25px;
-		}
-	}
-}
-
-.btn-green {
-	color: $light-brown;
-	background: $green;
-	border: $dark-brown;
-	margin: .25rem 0;
-	&.disabled {
-		color: $medium-brown;
-		background: darken($green, 50%);
-		border: $dark-brown;
-	}
-	&:hover, &:focus {
-		background: darken($green, 20%);
-		color: $medium-brown;
-		cursor: pointer;
-	}
-}
-
-.hidden {
-	display: none;
-}
-
 /**
  * Navbar
  */
 .navbar {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	position: fixed;
-	z-index: 100;
-	width: 100%;
-	min-height: 50px;
-	background:$tesla-brown;
-	.navbar-toggler-icon {
-		background: url("../images/menu.png") no-repeat center center;
-		background-size: 25px 25px;
-		&:hover {
-			background-image: url("../images/menu-green.png");
-		}
+	background: $nav-background;
+	.navbar-brand {
+		color: $landing-text;
+		margin-bottom: 0;
+		font-size: 1.5rem;
 	}
-	#mainNav {
-		margin-top: 45px;
-		text-align: center;
-		text-transform: uppercase;
+	.navbar-toggler {
+		border-color: rgba(227,173,150, .25);
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(227,173,150, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			&:hover {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(167,125,111, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			}
+		}	
+	}
+	.navbar-collapse {
 		.nav-link {
 			cursor: pointer;
+			color: $nav-text !important;
+			text-transform: uppercase;
 			&:hover,
 			&:focus {
-				color: $green;
-				text-decoration: none;
-			}
-		}
-	}
-	.social-icons {
-		position: absolute;
-		right:0;
-		margin-top: 7px;
-		li {
-			&.linkedin a {
-				background-image: url("../images/linkedin.png");
-				&:hover {
-					background-image: url("../images/linkedin-green.png");
-				}
-			}
-			&.github a {
-				background-image: url("../images/github.png");
-				&:hover {
-					background-image: url("../images/github-green.png");
-				}
+				color: $nav-text-hover !important;
 			}
 		}
 	}
 }
 
 /**
- * Slides
+ * Landing Slide
  */
 .homepage-slide {
 	height: 100vh;
-	background: url('../images/tesla.jpg') no-repeat 20% bottom; 
-	-webkit-background-size: 50%;
-	-moz-background-size: 50%;
-	-o-background-size: 50%;
-	background-size: 200%;
-	padding-top: 55px;
-	h1.intro {
-		font-weight: 300;
-		font-size: 1.25rem;
-		span {
-			font-weight: 700;
-		}
-	}
-	h2.tesla {
-		font-weight: 300;
-		margin-top: 2rem;
-		font-size: 1.25rem;
-		text-align: center;
-	}
-	#arrow {
-		display: block;
-		fill: $green;
-		fill-opacity: 0;
-		width: 60%;
-		transform: rotate(-65deg);
-		float: right;
-		margin-top: 3rem;
-		margin-right: -70px;
+	background: url('../images/background.jpg') no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	h2 {
+		color: $landing-text;
+		padding-top: 25vh;
+		font-size: 12vw;
+		line-height: .75;
+		font-weight: 600;
 	}
 }
 
-.services-background {
-	min-height: 3px;
-}
-
-.services-slide {
-	.service {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		.service-icon {
-			display: inline-block;
-			width: 95px;
-			height: 95px;
-			text-align: center;
-			padding-top: 8px;
-			margin: 0 auto;
-			-moz-border-radius: 56px;
-			-webkit-border-radius: 56px;
-			border-radius: 56px;
-			background: $light-brown;
-			img {
-				width: 80px;
-				height: 80px;
-				display: block;
-			}
-		}
-		.service-body {
-			display: inline-block;
-			width: 70%;
-			padding-left: 15px;
-		}
-	}
-}
-
+/**
+ * Projects Slide
+ */
 .projects-slide {
-	border-top: 3px solid $green;
-	border-bottom: 3px solid $grey;
+	border-top: 5px solid $tile-border;
+	border-bottom: 5px solid $tile-border;
 	.project {
-		height: 220px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		text-align: center;
-		a:focus {
-			outline: none;
-		}
-		.project-icon {
-			text-align: center;
-			padding-top: 8px;
-			height: 70%;
-			img {
-				height: 100%;
-				margin: 0 auto;
+		background: $tile-bg;
+		border: 5px solid $tile-border;
+		a {
+			.project-icon {
+				img {
+					width: 80%;
+				}
 			}
-		}
-		.project-body {
-			padding-top: 10px;
-			h4 {
-				letter-spacing: 2px;
-				font-size: 14px;
-				line-height: 16px;
-				margin-bottom: 0;
-			}
-			.tag {
-				font-size: 13px;
-				font-style: italic;
-			}
+			.project-body {
+				padding-top: 10px;
+				h3 {
+					margin-bottom: 0;
+					color: $text;
+					text-transform: uppercase;
+					font-weight: 600;
+					font-size:	1.2rem;
+					letter-spacing: .025rem;
+				}
+				p {
+					font-style: italic;
+					color: $text-secondary;
+				}
 
+			}
+		}
+		&:hover,
+		&.disabled {
+			background: $tile-hover;
+			.project-body {
+				h3 {
+					color: $tile-hover-text;
+				}
+				p {
+					font-style: italic;
+					color: $tile-hover-secondary;
+				}
+
+			}
 		}
 	}
 }
 
+/**
+ * About Slide
+ */
 .about-slide {
+	display:none;
 	.profile-image-wrapper {
 		padding-top: 20px;
 		.profile-image {
@@ -294,7 +196,7 @@ ul {
 			-moz-border-radius: 56px;
 			-webkit-border-radius: 56px;
 			border-radius: 56px;
-			background: $light-brown;
+			background: $grey-light;
 			overflow: hidden;
 			img {
 				width:112px;
@@ -306,38 +208,43 @@ ul {
 	}
 }
 
+/**
+ * Contact Slide
+ */
 .contact-slide {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: $background-social;
+	color: $social-text;
 	h2 {
-		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+	p {
+		color: $social-p;
+	}
+	.social-icons {
+		padding-top: 15px;
+		.fa {
+			font-size: 3rem;
+			padding: 1.5rem;
+		}
 	}
 }
 
+/**
+ * Footer
+ */
 footer {
 	padding: 10px 0;
-	height: 50px;
-	.copyright {
-		padding-top: 5px;
-		font-size: 13px;
-	}
-	.social-icons {
-		float: right;
-		li {
-			&.linkedin a {
-				background-image: url("../images/linkedin-light.png");
-				&:hover {
-					background-image: url("../images/linkedin.png");
-				}
-			}
-			&.github a {
-				background-image: url("../images/github-light.png");
-				&:hover {
-					background-image: url("../images/github.png");
-				}
-			}
-		}
+	background: $nav-background;
+	color:$text-secondary;
+	font-size: .75rem;
+	text-align: center;
+	p{
+		margin:0;
 	}
 }
 
@@ -345,14 +252,14 @@ footer {
  * Modal Windows
  */
 .modal .modal-content {
-	background: $light-brown;
+	background: $peach-light;
 	.tag {
 		text-align: center;
 		font-style: italic;
 		font-size: .75rem;
 		padding: 3px;
 		margin: .25rem .5rem;
-		background: lighten($medium-brown, 5%);
+		background: lighten($peach, 5%);
 		color: $green;
 	}
 	.project-image img {
@@ -369,164 +276,40 @@ footer {
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
+//Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-	.homepage-slide {
-		background: url('../images/tesla.jpg') no-repeat 20% center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		.homepage-content {
-			h1.intro {
-				font-size: 1.5rem;
-			}
-			h2.tesla {
-				text-align: right;
-				margin-top: 2rem;
-				font-size: 1.5rem;
-			}
-			#arrow {
-				display: block;
-				fill: $green;
-				fill-opacity: 0;
-				width: 40%;
-				transform: rotate(-45deg);
-				float: right;
-				margin-top: 4rem;
-				margin-right: 0;
-			}
-		}
-	}
-}
 
-@media (min-width: 576px) and (max-height: 450px) {
-	.homepage-slide {
-		background: url('../images/tesla.jpg') no-repeat 20% bottom;
-		-webkit-background-size: 75%;
-		-moz-background-size: 75%;
-		-o-background-size: 75%;
-		background-size: 75%;
-		.homepage-content {
-			#arrow {
-				transform: rotate(-5deg);
-				margin-top: 0;
-				margin-right: 80px;
-			}
-		}
-	}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.navbar {
-		#mainNav {
-			margin-top: 5px;
-			text-align: left;
-			li {
-				padding: 0 15px;
+		background: none;
+		.navbar-collapse {
+			max-width: 55vw;
+			.nav-link {
+				padding: 0 5vw;
 			}
 		}
 	}
-	.homepage-slide {
-		background: url('../images/tesla.jpg') no-repeat center center; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		.homepage-content {
-			padding-top: 15vh;
-			h1.intro {
-				font-size: 2rem;
-			}
-			h2.tesla {
-				text-align: right;
-				margin-top: 4rem;
-				font-size: 2rem;
-			}
-			#arrow {
-				display: block;
-				fill: $green;
-				fill-opacity: 0;
-				width: 60%;
-				float: none;
-				margin-top: 0;
-				transform: rotate(0deg);
-				margin-left: 40px;
-			}
+	footer {
+		text-align: left;
+		.credit {
+			text-align: right;
 		}
 	}
-	.services-background {
-		height: 50px;
-	}
-	.services-slide {
-		.service {
-			.service-icon {
-				display: block;
-				margin-top: -56px;
-				img {
-					display: inline-block;
-				}
-			}
-			.service-body {
-				width: 100%;
-				display: block;
-				text-align: center;
-				padding: 0;
-				margin: 0;
-			}
-		}
-	}
-	.projects-slide {
-		.project {
-			.project-icon {
-				height: auto;
-				img {
-					height: auto;
-					width: 60%;
-					max-width: 250px;
-					margin: 0 auto;
-				}
-			}
-		}
-	}
-	.about-slide {
-		.profile-image-wrapper {
-			padding-top: 50px;
-			padding-bottom: 50px;
-			.profile-image {
-				width: 250px;
-				height: 250px;
-				-moz-border-radius: 125px;
-				-webkit-border-radius: 125px;
-				border-radius: 125px;
-				img {
-					width:250px;
-				}
-			}
-		}
-		.profile {
-			padding: 45px 15px;
-		}
-	}
-	.modal-dialog {
-		max-width:700px;
-	}
-
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
+	.navbar .navbar-collapse {
+		max-width: 47vw;
+	}
 }
 
 // Extra large devices (large desktops, 1600px and up)
 @media (min-width: 1600px) {
-	.projects-slide {
-		.project {
-			height: 240px;
-		}
+	.navbar .navbar-collapse {
+		max-width: 40vw;
 	}
 }
-
-@import 'animations';
